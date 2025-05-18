@@ -53,5 +53,6 @@ Open the Arduino sketch in the Arduino IDE.
 
 -Advanced sensor calibration for higher accuracy
 
-## License
-This project is licensed under the MIT License.
+## Contributors
+-Radhika S
+-Nivedhitha YP
