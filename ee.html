@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IV Infusion Flow Detection</title>
+</head>
+<body>
+    <h2>Upload an Image</h2>
+    <input type="file" id="fileInput">
+    <button onclick="uploadImage()">Upload</button>
+    <h3 id="result"></h3>
+    <img id="uploadedImage" src="" width="300px" style="display:none;">
+    
+    <script>
+        function uploadImage() {
+            let fileInput = document.getElementById("fileInput");
+            if (fileInput.files.length === 0) {
+                alert("Please select a file!");
+                return;
+            }
+            let formData = new FormData();
+            formData.append("file", fileInput.files[0]);
+
+            fetch("/predict", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("result").innerText = "Prediction: " + data.prediction;
+                document.getElementById("uploadedImage").src = data.image_url;
+                document.getElementById("uploadedImage").style.display = "block";
+            })
+            .catch(error => console.error("Error:", error));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design - Report</title>
+    <link rel="stylesheet" href="accept.css">
+</head>
+<body>
+    <script src="accept.js"></script>
+
+    <div class="main">
+        <video autoplay muted loop id="bg-video">
+            <source src="IV Bottle.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Medico</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="doctor.html">HOME</a></li>
+                    <li><a href="#">PROFILE</a></li>
+                    <li><a href="#">HELP</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Report Section -->
+        <div class="report-sheet">
+            <h2>Patient Report Sheet</h2>
+             <form onsubmit="showNotification(event)">
+                <label for="patient-name"><strong>Patient Name:</strong></label>
+                <input type="text" id="patient-name" name="patient-name" placeholder="Enter patient name">
+
+                <label for="dob"><strong>Date of Birth (DOB):</strong></label>
+                <input type="date" id="dob" name="dob">
+
+                <label for="sex"><strong>Sex:</strong></label>
+                <select id="sex" name="sex">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <label for="history"><strong>Medical History:</strong></label>
+                <textarea id="history" name="history" placeholder="Enter medical history"></textarea>
+
+                <label for="vitals"><strong>Vitals Level:</strong></label>
+                <input type="text" id="vitals" name="vitals" placeholder="Enter vitals level">
+
+                <label for="iv-fluid"><strong>IV Fluid Level:</strong></label>
+                <input type="text" id="iv-fluid" name="iv-fluid" placeholder="Enter IV fluid level">
+
+                <label for="nurse"><strong>Nurse to be Handled By:</strong></label>
+                <select id="nurse" name="nurse">
+                    <option value="">Select a nurse</option>
+                    <option value="nurse1">Nurse A</option>
+                    <option value="nurse2">Nurse B</option>
+                    <option value="nurse3">Nurse C</option>
+                    <option value="nurse4">Nurse D</option>
+                </select>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

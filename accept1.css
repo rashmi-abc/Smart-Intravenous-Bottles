@@ -1,0 +1,166 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-y: auto;
+    background-color: black;
+}
+
+html {
+    overflow-y: auto;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: visible;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+/* Navigation Bar */
+.navbar {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    position: relative;
+    z-index: 10;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: #45d5f9;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: 90px;
+}
+
+ul li {
+    margin-left: 40px;
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #45d5f9;
+}
+
+/* Content Styling */
+.content {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.prescription {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    text-align: center;
+    background-color: rgba(0, 191, 255, 0.9);
+    color: white;
+    padding: 10px 0;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Styling for the prescription sections */
+.prescription-section {
+    padding: 10px;
+}
+
+.prescription-section h3 {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Styling Lists */
+.medications ul,
+.infusions ul,
+.injections ul {
+    list-style: none;
+    padding: 0;
+}
+
+.medications li,
+.infusions li,
+.injections li {
+    margin: 5px 0;
+}
+
+input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+input[type="checkbox"]:checked {
+    accent-color: #00bfff;
+}
+
+/* Standard Button Styling (Update, View, Flow) */
+.update-btn {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #00bfff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.update-btn:hover {
+    background-color: #007acc;
+}

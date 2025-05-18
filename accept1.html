@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Prescription</title>
+    <link rel="stylesheet" href="accept1.css">
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="main">
+        <div class="video-container">
+            <video autoplay muted loop id="bg-video">
+                <source src="IV Bottle.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Medico</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="nurse.html">HOME</a></li>
+                    <li><a href="profile.html">PROFILE</a></li>
+                    <li><a href="#">HELP</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Prescription Content -->
+        <div class="content">
+            <div class="prescription">
+                <div class="header">
+                    <h1>DOCTOR'S PRESCRIPTION</h1>
+                </div>
+                <div class="patient-info">
+                    <p><strong>Patient Name:</strong> Ram</p>
+                    <p><strong>Gender:</strong> Male</p>
+                    <p><strong>Age:</strong> 30</p>
+                </div>
+                <div class="patient-condition">
+                    <h3>Patient Condition:</h3>
+                    <ul>
+                        <li>3 day history of mild fever, sore throat & fatigue</li>
+                        <li>Hypertension</li>
+                        <li>Type II Diabetes Mellitus</li>
+                        <li>Seasonal allergies</li>
+                    </ul>
+                </div>
+                <div class="prescription-section">
+                    <!-- Medications Section -->
+                    <div class="medications">
+                        <h3>Medications</h3>
+                        <ul>
+                            <li>Betaloc 100mg 1-0-1 <input type="checkbox" class="med-checkbox" checked></li>
+                            <li>Dorzolamidum 10mg 1-0-0 <input type="checkbox" class="med-checkbox" checked></li>
+                            <li>Cimetidine 50mg 0-0-1 <input type="checkbox" class="med-checkbox" checked></li>
+                        </ul>
+                        <button class="update-btn">Update</button>
+                    </div>
+                    
+                    <!-- Infusions Section -->
+                    <div class="infusions">
+                        <h3>Infusions</h3>
+                        <ul>
+                            <li>Dextrose - 50ml <input type="checkbox" class="inf-checkbox" checked></li>
+                        </ul>
+                        <button class="update-btn">Update</button>
+                        <a href="view.html" class="update-btn">View</a>
+                        <a href="ee.html" class="update-btn">Flow</a>
+                    </div>
+                    
+                    <!-- Injections Section -->
+                    <div class="injections">
+                        <h3>Injections</h3>
+                        <ul>
+                            <li>Ampicillin - 1 dose (morning/night) <input type="checkbox" class="inj-checkbox"></li>
+                            <li>Adrenaline - 1 dose (weekly once, Emergency) <input type="checkbox" class="inj-checkbox"></li>
+                        </ul>
+                        <button class="update-btn">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="accept1.js"></script> <!-- Link to external JS file -->
+</body>
+</html>

@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    overflow-y: auto; /* Enables vertical scrolling */
+    background-color: #000; /* Optional: Add a background color */
+}
+
+html {
+    height: 100%;
+    overflow-y: auto; /* Ensures scrolling works on all browsers */
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh; /* Ensure it grows with content */
+    position: relative;
+    overflow: visible; /* Allow content overflow for scrolling */
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.navbar {
+    width: 1000px;
+    height: 75px;
+    margin: auto;
+}
+
+.logo {
+    color: #45d5f9;
+    font-size: 35px;
+}
+
+.menu {
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 60px;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #45d5f9;
+}
+
+
+/* Report Sheet Styling */
+.report-sheet {
+    margin: 100px auto; /* Space from the top, below the navbar */
+    background-color: rgba(69, 213, 249, 0.8); /* Transparent blue color */
+    padding: 20px; /* Reduced padding for smaller size */
+    border-radius: 10px; /* Slightly smaller rounded corners */
+    width: 70%; /* Smaller width */
+    max-width: 600px; /* Prevents it from being too wide */
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.report-sheet h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff; /* Header remains the same */
+}
+
+.report-sheet form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Slightly reduced gap between form elements */
+}
+
+.report-sheet label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.report-sheet input, 
+.report-sheet select, 
+.report-sheet textarea {
+    padding: 8px; /* Reduced padding for smaller fields */
+    font-size: 14px; /* Reduced font size */
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.report-sheet textarea {
+    height: 60px; /* Reduced height */
+    resize: none;
+}
+
+.report-sheet button {
+    padding: 8px; /* Reduced padding for the button */
+    font-size: 16px; /* Slightly smaller font */
+    font-weight: bold;
+    color: #fff;
+    background-color: #45d5f9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.report-sheet button:hover {
+    background-color: #33c1e1;
+}
